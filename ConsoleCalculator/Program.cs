@@ -1,10 +1,13 @@
-﻿namespace ConsoleCalculator
+﻿using CalculatorLibrary;
+
+namespace ConsoleCalculator
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Calculator is calculating...");
+            Calculator calculator = new Calculator();
+            calculator.Run();
         }
     }
 }
